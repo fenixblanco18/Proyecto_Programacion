@@ -8,7 +8,9 @@ public class Explosion : MonoBehaviour
 {
     public GameObject prefabExplosion;
     // Start is called before the first frame update
-  public void OnCollisionEnter();
+  public void OnCollisionEnter()
+  {
      Instantiate(prefabExplosion, transform.position, transform.rotation);
-     Destroy(GameObject);
+     Destroy(gameObject);
+    }
 }
