@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProyectil: {fileID: 1103334990417643604, guid: 05171043ff8edbf4d9e7b2a146134529, type: 3}
-  fuerza: 1000
+  fuerza: 100
   posicion: {fileID: 1984554573}
 --- !u!1 &1810964031
 GameObject:
