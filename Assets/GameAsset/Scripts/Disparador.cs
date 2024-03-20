@@ -19,6 +19,11 @@ public class Disparador : MonoBehaviour
     }
     }
     void Disparar(){
-        print("Disparando...");
+        //1. Crear el objeto
+        GameObject go = Instantiate(
+            prefabProyectil, posicion.position, posicion.rotation);
+            go.GetComponent<Rigidbody>().AddForce(
+                posicion.forward*fuerza
+            );
     }
 }
