@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemigoTorpe : MonoBehaviour
@@ -9,15 +8,14 @@ public class EnemigoTorpe : MonoBehaviour
     public float minAngle;
     public float maxAngle;
 
-    public GameObject suelo;
+    
     
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);        
     }
-    void OnCollisionEnter(Collision c){
-        if (c.gameObject.name!=suelo.name){
+    void OnCollisionEnter(Collision c)
+    {
             transform.Rotate(0, Random.Range(minAngle, maxAngle), 0);
-        }
     }
 }

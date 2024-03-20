@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8730365283054642219}
   - component: {fileID: 2742035598048112579}
   - component: {fileID: -7973089065257251460}
+  - component: {fileID: -978936932617080486}
   m_Layer: 0
   m_Name: Proyectil
   m_TagString: Untagged
@@ -74,6 +75,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabExplosion: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
+--- !u!114 &-978936932617080486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103334990417643604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4944df50afffa4396556c34b7624bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: Enemigo
 --- !u!1 &6830634412988555947
 GameObject:
   m_ObjectHideFlags: 0
