@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class DestructorEnemigo : MonoBehaviour
 {
-    public String tag;
+    public String etiqueta;
     // Start is called before the first frame update
    public void OnCollisionEnter(Collision c){
-    if (c.gameObject.CompareTag(tag)){
+    if (c.gameObject.CompareTag(etiqueta)){
         Destroy(c.gameObject);
     }
    }
